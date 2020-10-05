@@ -1,0 +1,64 @@
+body {
+    background-image: url("./Pattern-Randomized.svg");
+    margin: auto;
+    width: 80vw;
+}
+
+
+header, footer {
+    color: white;
+}
+
+section > h2 {
+    color: #F97304;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+article > div {
+    display: inline-block;
+    width: 48%;
+    color: gainsboro;
+}
+
+aside {
+    display: inline-block;
+    width: 45%;
+    height: 130px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 2px gainsboro;
+}
+
+aside > ul {
+    padding-left: 10px;
+    margin: 0;
+    background-color: gainsboro;
+}
+
+aside > ul > li {
+    display: inline-block;
+    border: 5px solid tomato;
+    border-radius: 50%;
+}
+
+aside > ul > li:nth-child(2) {
+    border: 5px solid orange;
+}
+
+aside > ul > li:nth-child(3) {
+    border: 5px solid green;
+}
+
+aside > p {
+    display: block;
+    width: 50%;
+    margin: auto;
+    line-height: 105px;
+}
+
+article:nth-of-type(2) > aside {
+    color: rgba(163, 140, 247, 0.666);
+}

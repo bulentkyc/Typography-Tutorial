@@ -1,26 +1,42 @@
 body {
-    background-image: url("./Pattern-Randomized.svg");
+    background-image: url("./Sun-Tornado-5.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     margin: auto;
     width: 80vw;
+    height: 100vh;
 }
 
-
 header, footer {
-    color: white;
+    color: #D44206;
+}
+
+header{
+    border-bottom: 1px solid #023D67;
+}
+
+footer {
+    border-top: 1px solid #023D67;
+    text-align: center;
 }
 
 section > h2 {
-    color: #F97304;
+    color: #023D67;
 }
 
 article {
     margin-bottom: 50px;
 }
 
+section > h4 {
+    color: #F97304;
+}
+
 article > div {
     display: inline-block;
     width: 48%;
-    color: gainsboro;
+    color: BLACK;
 }
 
 aside {
@@ -29,13 +45,13 @@ aside {
     height: 130px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 5px 2px gainsboro;
+    box-shadow: 0 0 5px 2px #03749C;
 }
 
 aside > ul {
     padding-left: 10px;
     margin: 0;
-    background-color: gainsboro;
+    background-color: #023D67;
 }
 
 aside > ul > li {
@@ -60,5 +76,5 @@ aside > p {
 }
 
 article:nth-of-type(2) > aside {
-    color: rgba(163, 140, 247, 0.666);
+    color: rgba(17, 59, 165, 0.666);
 }

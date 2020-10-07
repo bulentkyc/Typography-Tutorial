@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+@font-face {
+    font-family: "Bulent's new font";
+    src: url("./Assets/Lobster-Regular.ttf");
+}
+
 body {
-    background-image: url("./Sun-Tornado-5.svg");
+    background-image: url("./Assets/Sun-Tornado-5.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -21,11 +28,16 @@ footer {
     text-align: center;
 }
 
+section {
+    border-bottom: 1px solid #023D67;
+}
+
 section > h2 {
     color: #023D67;
 }
 
 article {
+    height: 130px;
     margin-bottom: 50px;
 }
 
@@ -34,7 +46,7 @@ section > h4 {
 }
 
 article > div {
-    display: inline-block;
+    float: left;
     width: 48%;
     color: BLACK;
 }
@@ -42,7 +54,7 @@ article > div {
 aside {
     display: inline-block;
     width: 45%;
-    height: 130px;
+    height: 100%;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 5px 2px #03749C;
@@ -75,6 +87,130 @@ aside > p {
     line-height: 105px;
 }
 
-article:nth-of-type(2) > aside {
+section:nth-of-type(1) > article:nth-of-type(2) > aside {
     color: rgba(17, 59, 165, 0.666);
+}
+
+section:nth-of-type(2) > article:nth-of-type(2) > aside {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+section:nth-of-type(2) > article:nth-of-type(3) > aside {
+    font-family: 'Sansita Swashed', cursive;
+}
+
+section:nth-of-type(2) > article:nth-of-type(4) > aside {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+section:nth-of-type(3) > article:nth-of-type(2) {
+    height: 400px;
+}
+
+
+section:nth-of-type(2) > article:nth-of-type(5) > aside {
+    font-family: "Bulent's new font", Arial;
+}
+
+section:nth-of-type(3) > article:nth-of-type(2) > aside {
+    font-size: 20px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(2) > aside > div {
+    background-color: rgba(0, 128, 0, 0.671);
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+section:nth-of-type(3) > article:nth-of-type(2) > aside > div > div {
+    background-color: rgb(145, 41, 41);
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+section:nth-of-type(3) > article:nth-of-type(2) > aside > div > div > div {
+    background-color: rgb(255, 238, 5);
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+
+/* Unstyled elements goes after here */
+
+.rem {
+    font-size: 1.2rem;
+}
+
+.rem > div {
+    font-size: 1.2rem;
+}
+
+.percent {
+    font-size: 120%;
+}
+
+.smaller, .smaller > div, .smaller > div > div {
+    font-size: smaller;
+}
+
+.larger, .larger > div, .larger > div > div {
+    font-size: larger;
+}
+
+.sm {
+    font-size: small;
+}
+
+.md {
+    font-size: medium;
+}
+.lg {
+    font-size: large;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.high-light {
+    background-color: greenyellow;
+}
+
+.centered-content {
+    margin: auto;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.justified {
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.font-w-800 {
+    font-weight: 800;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.parent {
+    font-weight: bold;
+}
+
+.child {
+    font-weight: lighter;
 }

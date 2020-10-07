@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Sansita+Swashed:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -41,11 +44,122 @@
             <article>
                 <div>
                     <!-- for explanation -->
-                    defines the color of the text.
+                    <br>
+                    <br>
+                    <br>
+                    Color can be transparent with the alpha value of color codes
+                </div>
+    
+                <aside>
+                    <!-- for the output -->
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>
+                        Hello World
+                    </p>
+                </aside>
+            </article>
+        </section>
+
+        <section>
+            <h2>font-family</h2>
+            <h4>Default value {}</h4>
+            <article>
+                <div>
+                    <!-- for explanation -->
+                    Sets a specific font for the text.
 
                     <h5>Syntax</h5>
 
-                    color: "color-value"
+                    font-family: "font (family) name"
+                </div>
+    
+                <aside>
+                    <!-- for the output -->
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>
+                        Hello World
+                    </p>
+                </aside>
+            </article>
+
+            <h4>Internal Spesific Font {font-family: Arial, Helvetica, sans-serif}</h4>
+            <article>
+                <div>
+                    <!-- for explanation -->
+                    <ul>
+                        <li>Browser tries Arial first. </li>
+                        <li>If it's not possible to use then tries to Halvetica.</li>
+                        <li>If it's not possible too, then tries sans-serif.</li>
+                        <li>If last one also not possible to use, then browser uses default font.</li>
+                    </ul>
+                </div>
+    
+                <aside>
+                    <!-- for the output -->
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>
+                        Hello World
+                    </p>
+                </aside>
+            </article>
+
+            <h4>External Spesific Font Via HTML link {font-family: 'Sansita Swashed', cursive}</h4>
+            <article>
+                <div>
+                    <!-- for explanation -->
+                    Externally fonts can be used in HTML via &lt;link href&gt;
+                </div>
+    
+                <aside>
+                    <!-- for the output -->
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>
+                        Hello World
+                    </p>
+                </aside>
+            </article>
+
+            <h4>External Spesific Font Via CSS Import {font-family: 'Josefin Sans', sans-serif}</h4>
+            <article>
+                <div>
+                    <!-- for explanation -->
+                    Externally fonts can be used in HTML via @import url()
+                </div>
+    
+                <aside>
+                    <!-- for the output -->
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>
+                        Hello World
+                    </p>
+                </aside>
+            </article>
+
+            <h4>External Spesific Font From the Project Folder {font-family: "Bulent's new font", Arial;}</h4>
+            <article>
+                <div>
+                    <!-- for explanation -->
+                    Externally fonts can be used in HTML from the project folder as font files (like .ttf, .otf)
                 </div>
     
                 <aside>
@@ -62,7 +176,204 @@
             </article>
         </section>
         
+        <section>
+            <h2>font-size</h2>
+            <h4>Default value {}</h4>
+            <article>
+                <div>
+                    <!-- for explanation -->
+                    defines the color of the text.
+
+                    <h5>Syntax</h5>
+
+                    font-size: "size + unit"
+                </div>
+    
+                <aside>
+                    <!-- for the output -->
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>
+                        Hello World
+                    </p>
+                </aside>
+            </article>
+
+            <h4>Relative size {font-size: 1.2em;}</h4>
+            <article>
+                <div>
+                    <!-- for explanation -->
+                    <br>
+                    <br>
+                    <br>
+                    Calculates the font sizes about parent font size.
+                    Parent Font Size * XYZem
+                </div>
+    
+                <aside>
+                    <!-- for the output -->
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    Parent container: 20px;
+                    <div>
+                        font-size: 1.2em; (24px)
+                        <div>
+                            font-size: 1.2em; (28.8px)
+                            <div>
+                                font-size: 1.2em; (34.56px)
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </article>
+        </section>
     </main>
+
+    PS: Rest of th content needs to be styled. It's an optional task.
+
+    <div class="rem">
+        I'm 1.2rem
+        <div>
+            I'm 1.2rem
+        </div>
+    </div>
+
+    <hr>
+
+    <div>
+        Fontsize with %
+        <div  class="percent">
+            120% of the parent
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="smaller">
+        I'm smaller
+        <div>
+            I'm smaller
+            <div>
+                I'm smaller
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="larger">
+        I'm larger
+        <div>
+            I'm larger
+            <div>
+                I'm larger
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="sm">
+        small
+    </div>
+
+    <div class="md">
+        medium
+    </div>
+
+
+    <div class="lg">
+        large
+    </div>
+
+    <hr>
+
+    <div>
+        I'm <strong>important</strong> part of the text
+    </div>
+
+    <div>
+        I'm <em>important</em> part of the text
+    </div>
+
+    <div>
+        E = em<sup>2</sup>
+    </div>
+
+    <div>
+        H<sub>2</sub>O
+    </div>
+
+    <div>
+        I'm a <span class="high-light">speacial</span> part of the text!
+    </div>
+
+    <div> <small><del>30$</del></small> <mark>20$</mark></div>
+
+    <hr>
+
+    <div class="w50 centered-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus harum ipsam cupiditate dolore vero, voluptatibus architecto esse nihil exercitationem, recusandae laborum quia suscipit doloremque necessitatibus sint saepe aut pariatur facilis.
+    </div>
+
+    <br>
+
+    <div class="w50 centered-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus harum ipsam cupiditate dolore vero, voluptatibus architecto esse nihil exercitationem, recusandae laborum quia suscipit doloremque necessitatibus sint saepe aut pariatur facilis.
+    </div>
+
+    <br>
+    
+    <div class="w50 centered-content centered-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus harum ipsam cupiditate dolore vero, voluptatibus architecto esse nihil exercitationem, recusandae laborum quia suscipit doloremque necessitatibus sint saepe aut pariatur facilis.
+    </div>
+
+    <br>
+    
+    <div class="justified">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus harum ipsam cupiditate dolore vero, voluptatibus architecto esse nihil exercitationem, recusandae laborum quia suscipit doloremque necessitatibus sint saepe aut pariatur facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente ab reprehenderit. Magnam ex saepe veniam nulla hic eaque. Sit obcaecati esse ullam inventore magni? Magnam ut et nulla voluptates.
+    </div>
+
+    <hr>
+
+    <h2>fon-weight</h2>
+
+    <p class="bold">
+        Hello World!
+    </p>
+
+    <p class="font-w-800">
+        Hello World!
+    </p>
+
+    <p class="bolder">
+        Hello World!
+    </p>
+
+    <div class="parent">
+        Parent
+        <div class="child">
+            Child
+        </div>
+    </div>
+
+        <ul>
+            <li>100 Thin</li>
+            <li>200 Extra Light</li>
+            <li>300 Light</li>
+            <li>400 Normal</li>
+            <li>500 Medium</li>
+            <li>600 Semi Bold</li>
+            <li>700 Bold</li>
+            <li>800 Extra Bold</li>
+            <li>900 Ultra Bold</li>
+        </ul>
+
     <footer>
         <h3>2020 October</h3>
     </footer>

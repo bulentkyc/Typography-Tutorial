@@ -214,3 +214,59 @@ section:nth-of-type(3) > article:nth-of-type(2) > aside > div > div > div {
 .child {
     font-weight: lighter;
 }
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.t-d-underline {
+    text-decoration: underline;
+}
+
+.t-d-none {
+    text-decoration: none;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.text-shadow {
+    text-shadow: 0 0 5px black;
+}
+
+.f-s-20 {
+    font-size: 120px;;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-blue {
+    color: blue;
+}
+
+.color-yellow {
+    color: yellow;
+}
+
+.ps::before {
+    content: "I'm before pseudo element";
+}
+
+.ps::after {
+    content: "I'm after pseudo element";
+}

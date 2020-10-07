@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Sansita+Swashed:wght@300;400;500&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/d7faf1ae4e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -373,6 +375,81 @@
             <li>800 Extra Bold</li>
             <li>900 Ultra Bold</li>
         </ul>
+
+        <hr>
+
+        <h2>font-style</h2>
+        <div class="italic">
+            Hello World
+        </div>
+
+        <div class="oblique">
+            Hello World
+            <br>
+            This is more slanted then italic if possible!
+        </div>
+
+        <hr>
+
+        <h2>text-decoration</h2>
+        <div class="t-d-underline">
+            Hello World
+            <br>
+            Underlines the text content.
+        </div>
+
+        <div class="t-d-none">
+            Hello World
+            <br>
+            Removes any text decoration.
+        </div>
+
+        <h2>text-transform</h2>
+        <div class="capitalize">
+            Hello World
+            <br>
+            Turns the first letter of each word into a capital letter.
+        </div>
+
+        <div class="uppercase">
+            Hello World
+            <br>
+            Turns all letters into capital letters.
+        </div>
+
+        <div class="lowercase">
+            Hello World
+            <br>
+            Turns all letters into lowercase letters.
+        </div>
+
+        <h2>text-shadow</h2>
+
+        Syntax: 
+
+        <pre>text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;</pre>
+
+        Explanations:
+
+        h-shadow 	Required. The position of the horizontal shadow. Negative values are allowed 	
+        v-shadow 	Required. The position of the vertical shadow. Negative values are allowed 	
+        blur-radius 	Optional. The blur radius. Default value is 0 	
+        color 	Optional. The color of the shadow. Look at CSS Color Values for a complete list of possible color values 	
+        none 	Default value. No shadow 	
+        initial 	Sets this property to its default value. Read about initial 	
+        inherit 	Inherits this property from its parent element. Read about inherit
+
+        <p class="text-shadow">Hello World</p>
+
+        <div class="fab fa-css3-alt f-s-20 color-blue"></div>
+
+        <div class="fab fa-html5 f-s-20 color-red"></div>
+
+        <div class="fab fa-js fa-10x color-yellow"></div>
+
+        <hr>
+
+        <p class="ps">-I'm a paragraph-</p>
 
     <footer>
         <h3>2020 October</h3>

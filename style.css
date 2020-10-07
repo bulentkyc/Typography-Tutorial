@@ -265,8 +265,10 @@ section:nth-of-type(3) > article:nth-of-type(2) > aside > div > div > div {
 
 .ps::before {
     content: "I'm before pseudo element";
+    color: green;
 }
 
 .ps::after {
     content: "I'm after pseudo element";
+    color: palegoldenrod;
 }
